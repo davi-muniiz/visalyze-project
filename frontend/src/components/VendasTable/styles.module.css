@@ -1,0 +1,17 @@
+.tableView {
+  border: 1px solid black;
+  border-spacing: 30px;
+}
+
+
+th, td {
+  padding: 15px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}

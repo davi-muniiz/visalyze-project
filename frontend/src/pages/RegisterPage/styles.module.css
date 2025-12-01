@@ -1,0 +1,14 @@
+body {
+  overflow-y: hidden;
+  background-color: blue;
+}
+
+.centralizer {
+  display: block;
+  max-width: 60rem;
+  width: 60rem;
+  margin-bottom: 50%;
+  padding-top: 10%;
+  margin: 0 auto;
+  z-index: 1;
+}

@@ -1,0 +1,101 @@
+body {
+  background-color: var(--primary);
+  margin: 0;
+}
+
+.fullNav {
+  background-color: var(--primary);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid #000000 0.1rem;
+}
+
+.insideNav {
+  display: flex;
+  width: inherit;
+  justify-content: center;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.List svg,
+.CircleUser svg {
+  width:  2rem;
+  height: 2rem;
+  color: var(--four);
+}
+
+.List svg:hover,
+.CircleUser svg:hover {
+  color: gray;
+  filter: brightness(80%);
+  transition: all 300ms ease-in-out;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: 1000;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--terciary);
+  
+}
+
+h1 a:hover {
+  filter: brightness(80%);
+  transition: all 300ms ease-in-out;
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  height: 87vh;
+}
+
+.box {
+  background-color: var(--secondary);
+  border-radius: 1rem;
+}
+
+.paddingBox {
+  padding: 2rem 3rem;
+}
+
+.paddingBox .iconSvg svg {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.divButton {
+  display: flex;
+  background-color: var(--five);
+  border-radius: 0.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 8rem;
+  height: 2rem;
+  justify-self: center;
+}
+
+.divButton svg {
+  padding: 0.5rem 0 0.5rem 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--terciary);
+}
+
+.spacingButton {
+  padding-top: 0.5rem;
+}

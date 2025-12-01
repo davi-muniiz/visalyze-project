@@ -1,0 +1,27 @@
+.footerDiv {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: solid var(--four) 0.1rem ;
+  align-items: center;
+}
+
+.divInnerCenter{
+  display: flex;
+  justify-self: center;
+  margin: 0 auto;
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end:3 ;
+  align-items: center;
+}
+
+.divInnerCenter p {
+  color: var(--terciary);
+}
+
+.divInnerCenter p a {
+  text-decoration: none;
+}

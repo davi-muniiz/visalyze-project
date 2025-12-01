@@ -1,0 +1,49 @@
+.fullNav {
+  background-color: var(--primary);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid #000000 0.1rem;
+}
+
+
+.insideNav {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+
+.List svg,
+.CircleUser svg {
+  width:  2rem;
+  height: 2rem;
+  color: var(--four);
+}
+
+
+.List svg:hover,
+.CircleUser svg:hover {
+  color: gray;
+  filter: brightness(80%);
+  transition: all 300ms ease-in-out;
+}
+
+h1 {
+  font-family: monospace;
+  font-weight: 1000;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--four);
+  
+}
+
+h1 a:hover {
+  filter: brightness(80%);
+  transition: all 300ms ease-in-out;
+}

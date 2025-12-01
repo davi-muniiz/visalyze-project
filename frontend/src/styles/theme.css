@@ -1,0 +1,16 @@
+:root {
+  --primary: #333333;
+  --secondary: #ADADAD;
+  --terciary: #FFFFFF;
+  --four: #000000;
+  --five: #2C2C2C;
+
+  --success: #22c55e;
+  --warning: #eab308;
+  --error: #991b1b;
+  --info: #0ea5e9;
+}
+
+html {
+  font-family: Nunito Sans;
+}

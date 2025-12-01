@@ -1,0 +1,26 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  max-height: 100rem;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  background-color:aqua;
+  border-radius: 2rem;
+  box-shadow: 0rem 0rem 1rem black;
+} 
+
+.formRow {
+  display: flex;
+  width: inherit;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.formBtnRow {
+  margin: 2rem 0rem;
+}

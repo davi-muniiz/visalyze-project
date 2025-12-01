@@ -1,0 +1,16 @@
+.defaultbutton {
+  margin: 0 auto;
+  width: 12rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: solid 0.1rem;
+  background-color: green;
+}
+
+.defaultbutton:hover {
+  filter: brightness(90%);
+}
+
+.defaultbutton:active {
+  filter: brightness(80%);
+}
