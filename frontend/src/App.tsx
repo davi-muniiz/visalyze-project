@@ -1,12 +1,12 @@
 import './App.css';
-import { NotFoundPage } from './pages/NotFoundPage/NotFoundPage';
+import { HomePage } from './pages/HomePage';
 
 function App() {
 
   return (
     <>
     
-     <NotFoundPage/>
+     <HomePage/>
     
     </>
   );

@@ -1,0 +1,35 @@
+.externalAside {
+  background-color: var(--primary);
+  display: block;
+  width: 15rem;
+  border-right: solid var(--four) 0.1rem;
+  color: var(--terciary);
+  position: fixed;
+  height: 100%;
+}
+
+.innerAside {
+  padding-top: 1.5rem;
+}
+
+.iconAside {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  height: 3.2rem;
+}
+
+.iconAside svg {
+  color: var(--terciary);
+  filter: brightness(80%);
+  align-self: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary);
+}
