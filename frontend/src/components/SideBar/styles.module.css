@@ -2,14 +2,18 @@
   background-color: var(--primary);
   display: block;
   width: 15rem;
-  border-right: solid var(--four) 0.1rem;
+  border-right: solid rgb(000, 000, 000, 15%) 0.3rem;
   color: var(--terciary);
-  position: fixed;
+  position: absolute;
+  z-index: 1;
   height: 100%;
 }
 
 .innerAside {
-  padding-top: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  padding-top: 1rem;
 }
 
 .iconAside {
@@ -31,5 +35,4 @@
 
 body {
   margin: 0;
-  background-color: var(--primary);
 }

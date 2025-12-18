@@ -5,41 +5,86 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-bottom: solid #000000 0.1rem;
+  border-bottom: solid rgb(000, 000, 000, 15%) 0.3rem;
+  position: absolute;
+  z-index: 0;
 }
 
 
 .insideNav {
   display: flex;
   width: inherit;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem 4rem;
   align-items: center;
+  z-index: 0;
 }
 
-.List svg,
-.CircleUser svg {
-  width:  2rem;
-  height: 2rem;
-  color: var(--four);
+.visalyzeH1 {
+  margin: 0 auto;
 }
 
+.logoutIcon {
+  display: flex;
+  justify-self: end;
+}
 
-.List svg:hover,
-.CircleUser svg:hover {
-  color: gray;
-  filter: brightness(80%);
+.logoutIcon button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.logoutIcon button:hover {
+  border-bottom: solid var(--secondary) 0.1rem;
   transition: all 300ms ease-in-out;
 }
 
+.logoutIcon button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--terciary);
+}
+
+
+
+.logoutIcon button svg:hover {
+  color: var(--error);
+}
+.sunIcon {
+  display: flex;
+  justify-self: end;
+}
+
+.sunIcon button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sunIcon button svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--terciary);
+}
+
+
+
+.sunIcon button svg:hover {
+  color: var(--secondary);
+}
+
+
+
 h1 {
+  font-size: 1.5rem;
   font-family: monospace;
   font-weight: 1000;
 }
 
 h1 a {
   text-decoration: none;
-  color: var(--four);
+  color: var(--terciary);
   
 }
 

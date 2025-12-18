@@ -1,0 +1,13 @@
+.containerBox {
+  background-color: var(--secondary);
+  width: 1000px;
+  height: 40rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 16%;
+  left: 460px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

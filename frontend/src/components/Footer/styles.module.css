@@ -4,8 +4,10 @@
   width: 100%;
   flex-direction: column;
   grid-template-columns: 1fr 1fr 1fr;
-  border-top: solid var(--four) 0.1rem ;
+  border-top: solid rgb(000, 000, 000, 15%) 0.3rem;
   align-items: center;
+  position: absolute;
+  bottom: 0%;
 }
 
 .divInnerCenter{

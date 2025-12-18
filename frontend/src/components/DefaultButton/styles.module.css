@@ -14,3 +14,7 @@
 .defaultbutton:active {
   filter: brightness(80%);
 }
+
+.red {
+  background-color: red;
+}

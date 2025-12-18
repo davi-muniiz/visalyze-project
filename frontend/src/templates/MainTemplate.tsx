@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer"
 import { NavBar } from "../components/NavBar"
 
 type MainTemplateProps = {
@@ -9,6 +10,8 @@ export function MainTemplate({children}: MainTemplateProps) {
   return (
     <>
       <NavBar/>
+       {children}
+      <Footer/>
 
     </>
   )

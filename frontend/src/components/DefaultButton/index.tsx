@@ -10,7 +10,7 @@ export function DefaultButton({icon, type, color = 'green', ...rest}: DefaultBut
   return (
     <>
 
-    <button className={`${styles.defaultbutton} ${styles.color}`} {...rest}>{icon}</button>
+    <button className={`${styles.defaultbutton} ${styles[color]}`} {...rest}>{icon}</button>
 
     </>
   )

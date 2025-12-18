@@ -1,0 +1,113 @@
+.generalDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border-radius: 0.5rem;
+  background-color: #585656;
+  width: 13rem;
+}
+
+.innerExample {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.accImage {
+  display: flex;
+  justify-content: center;
+}
+
+.innerAccImage {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.nameConfig {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.innerNameConfig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 20rem;
+}
+
+.emailConfig {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.innerEmailConfig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 20rem;
+}
+
+
+.passwordConfig {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.innerPasswordConfig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: 20rem;
+}
+
+.deleteAcc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.deleteAcc p {
+  text-align: center;
+}
+
+.deleteAcc button {
+  width: 8rem;
+  height: 2.4rem;
+}
+
+.responsive {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  background-color: var(--secondary);
+  max-width: 1000px;
+  max-height: 600px;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
