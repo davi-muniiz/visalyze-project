@@ -2,10 +2,9 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import viewsets
-from .models import Venda
-from .serializers import ValidateSellSerializer, RegisterUserSerializer
+from .serializers import RegisterUserSerializer
 from django.contrib.auth.models import User
-from rest_framework.permissions import IsAuthenticated
+import pandas as pd
 # Create your views here.
 
 
@@ -15,18 +14,20 @@ def hello(request):
     return Response({"message": "Hello, world!"})
     
 
+
+@api_view(["POST"])
+def csv_config(request):
+        file = request.FILES["file"]
+
+        print("Files:", request.FILES)
+        print("DATA:", request.data)
+
+        dictfile = pd.read_csv(file).to_dict()
+        print(dictfile)
+        
+        return Response(dictfile)
+
+
 class RegisterUserView(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = RegisterUserSerializer
-
-class ProductCreaterView(viewsets.ModelViewSet):
-    queryset = Venda.objects.all()
-    serializer_class = ValidateSellSerializer
-    permission_classes = [IsAuthenticated]
-
-    def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
-
-    def get_queryset(self):
-        return Venda.objects.filter(user=self.request.user)
-    

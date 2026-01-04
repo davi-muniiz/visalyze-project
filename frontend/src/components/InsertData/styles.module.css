@@ -1,0 +1,38 @@
+.overlay {
+  display: flex;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.45);
+  width: 1000px;
+  height: 1000px;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardUpArch {
+  display: flex;
+  background-color: var(--secondary);
+  width: 400px;
+  height: 200px;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerText {
+  text-align: center;
+}
+
+.insertArch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

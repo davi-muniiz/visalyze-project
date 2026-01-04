@@ -5,7 +5,8 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.password_validation import validate_password
-from .models import Venda
+import pandas as pd
+from pathlib import Path
 
 class RegisterUserSerializer(serializers.ModelSerializer):
 
@@ -35,35 +36,3 @@ class RegisterUserSerializer(serializers.ModelSerializer):
 
         return user
     
-class ValidateSellSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Venda
-        fields = "__all__"
-
-    
-    def validate(self, attrs): 
-
-        if attrs.get('preco') or attrs('precovendido') == 0:
-            raise serializers.ValidationError(
-                {
-                    "preco" : "O valor não pode ser 0.",
-                    "precovendido": "O valor não pode ser 0."
-                    }
-
-            )
-        
-        if not attrs.get("produto"):
-            raise serializers.ValidationError(
-                {"produto": "O produto deve ter um nome."}
-            )
-        
-
-        
-        
-        if attrs.get("quantidadevendida") > attrs.get("quantidade"):
-            raise serializers.ValidationError(
-                {"quantidadevendida": "Quantidade Vendida maior que a Quantidade Adquirida."}
-            )        
-        
-     
-        return attrs

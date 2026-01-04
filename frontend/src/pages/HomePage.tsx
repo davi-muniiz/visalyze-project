@@ -1,14 +1,13 @@
-import { NavBar } from "../components/NavBar"
-import { SideBar } from "../components/SideBar"
-
+import { NavBar } from "../components/NavBar";
+import { NoGraphics } from "../components/NoGraphics";
+import { SideBar } from "../components/SideBar";
 
 export function HomePage() {
-
-
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <SideBar />
+      <NoGraphics />
     </>
-  )
+  );
 }

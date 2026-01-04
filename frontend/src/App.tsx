@@ -1,16 +1,14 @@
-import './App.css';
-import { HomePage } from './pages/HomePage';
-import { LoginPage } from './pages/LoginPage';
-import { RegisterPage } from './pages/RegisterPage';
-import { YourAccount } from './pages/YourAccount';
+import "./App.css";
+import { HomePage } from "./pages/HomePage";
+import { LoginPage } from "./pages/LoginPage";
+import { RegisterPage } from "./pages/RegisterPage";
+import { YourAccount } from "./pages/YourAccount";
+import { NotFoundPage } from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
-
   return (
     <>
-    
-     <HomePage/>
-    
+      <HomePage />
     </>
   );
 }
